@@ -1,0 +1,153 @@
+//usar un modal es un popup para la ventana emergente de las posicioness
+body {
+  background-image: url(imagenes/fondo.jpg);
+  border: 0;
+  p {
+    font-family:'Itim', cursive;
+    font-size: 22px;
+  }
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: MediumTurquoise;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.login {
+  width: 80%;
+  height: auto;
+  margin:auto;
+  border: 18px solid black;
+  border-radius: 40px;
+  text-align: center;
+  background-color: BlanchedAlmond; 
+  img {
+    width: 35px;
+  }
+}
+
+
+span{
+  color:MediumTurquoise; 
+}
+
+button {
+  width: 80%;
+  background-color: DarkOrange;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 3px;
+  font-family: 'Itim', cursive;
+}
+#error {
+  display: none;
+  color: brown;
+}
+
+.container {
+  display: none;
+  width: 85%;
+  height: auto;
+  margin: auto;
+  border: 18px solid black;
+  border-radius: 40px;
+  text-align: center;
+  background-color: BlanchedAlmond; filter:alpha(opacity=90);-moz-opacity:.70;opacity:.90;
+  font-family:'Itim', cursive;
+  font-size: 22px;
+}
+
+#ranking {
+  width: 80%;
+  height: auto;
+  margin:auto;
+  border: 18px solid black;
+  border-radius: 40px;
+  text-align: center;
+  background-color: BlanchedAlmond;
+  display: none;
+  font-family:'Itim', cursive;
+  font-size: 22px;
+  #ganador{
+    display: none;
+  }
+  #perdedor{
+    display: none;
+  }
+  img {
+    width: 35px;
+  }
+}
+//------------------------------------------
+
+#game-cards {
+  margin: 9px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+   .card-flip-container {
+    max-width: 29%;
+    position: relative;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    margin: 2%;
+    }
+
+    img {
+      max-width:	100%;
+      display:block;
+    }
+    .front{
+      backface-visibility: hidden;
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transform: rotateY(0deg);
+      border: 2px solid black;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    
+    .back{
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotateY(180deg);
+      border: 2px solid black;
+      transition: 0.8s;
+    }
+  }
+
+.rotar {
+	transform: rotateY(180deg);
+} 
+
+.grayscale {
+  transition: all 1s ease-in-out;
+  filter: grayscale(100%);
+}
+
+@media (min-width: 700px) {
+  .login {
+    width: 40%;
+  }
+  #game-cards {
+    display: flex;
+    align-content: space-around;
+    .card-flip-container {
+      max-width: 19%;
+    }
+  }
+  #ranking {
+    width: 40%;
+  }
+}

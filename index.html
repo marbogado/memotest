@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <div id="login" class="login">
+      <p class="title">Memotest</p>
+      <p>Hola <span><img src="imagenes/girl.png"></span> ! Vamos a jugar al Memotest</p>
+      <p>Pero antes de empezar...</p>
+      <p>Cual es tu nombre <span><img src="imagenes/question.png"></img></span></p>
+      <input type="text" id="inputNombre">
+      <p>Con que dificultad te gustaria jugar?</p>
+      <button type="button" id="facil" value="FACIL">FACIL</button>
+      <button type="button" id="intermedio" value="INTERMEDIO">INTERMEDIO</button>
+      <button type="button" id="dificil" value="DIFICIL">DIFICIL</button>
+      <p id="error">UPSS... El nombre es requerido.</p>
+    </div>
+
+    <div class="container" id="container">
+
+        <p class="title">Memotest</p>
+        <div>hola <span id="nombre"></span>!</div>
+        <p>encontra todos los pares en menos de <span id="nivelIntentos"></span> intentos</p>
+        <p>Nivel</p>
+        <p class="nivel"></p>
+
+        <div id="game-cards">
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+          <div class="card-flip-container">
+            <div class="front"><img src="imagenes/tapada.jpg" alt=""></div>
+            <div class="back"><img src="" alt=""></div>
+          </div>
+        </div>
+
+        <div id="chances-container">
+          <p>Intentos: <span id="nChances"></span></p>
+        </div>
+    </div>
+
+
+    <div id="ranking">
+      <p id="ganador">Ganaste!! <span><img src="imagenes/happy.png" alt=""></span> con <span class="total-intentos"></span> intentos.</p>
+      <p id="perdedor">Perdiste <span><img src="imagenes/sad.png" alt=""></span> con <span class="total-intentos"></span> intentos.</p>
+      
+      <p>podés volver a jugar</p>
+      <button id="return-game">volver a jugar</button>
+
+      <table id="tabla-ranking">
+        <tr>
+          <th>NOMBRE</th>
+          <th>NIVEL</th>
+          <th>INTENTOS</th>
+        </tr>
+       <!-- append los proximos tr/td del rankin a la tabla-->
+      </table>
+    </div>
+
+
+    <!--<section id="results-container" class="hidden">
+      <div class="win-lose-container">
+        <p id="lost" class="hidden"> PERDISTE ! </p>
+        <p class="hidden"><span id="win"> GANASTE! </span> con <span id="win-chances"></span> intentos</p>
+        <p>Ya podes volver a jugar</p>
+      </div>
+  
+      <div class="lvl-btns">
+        <button id='play-again'>VOLVER A JUGAR</button>
+      </div>
+  
+      <div class="results-chart">
+        <div class="div-chart" id="chart-username">
+          <span>NOMBRE</span>
+        </div>
+        <div class="div-chart" id="chart-lvl">
+          <span>NIVEL</span>
+        </div>
+        <div class="div-chart" id="chart-chances">
+          <span>INTENTOS</span>
+        </div>
+      </div>
+    </section>-->
+    
+    
+
+
+    <script src="https://file-epraavbxik.now.sh"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
